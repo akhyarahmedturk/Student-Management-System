@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewBtn = document.getElementById('viewStudentsBtn');
     viewBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        loadStudents();
+        loadStudents(viewBtn);
     });
 });
 
@@ -25,7 +25,7 @@ document.getElementById('searchFilterBtn').addEventListener('click', () => {
 async function loadStudents() {
     const studentList = document.getElementById('studentList');
     try {
-        const res = await fetch('http://localhost:3500/students');
+        const res = await fetch('/students');
         const data = await res.json();
 
         // Clear previous list
