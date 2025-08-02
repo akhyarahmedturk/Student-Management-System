@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewBtn = document.getElementById('viewStudentsBtn');
     viewBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        loadStudents(viewBtn);
+        loadStudents();
     });
 });
 
@@ -22,7 +22,7 @@ document.getElementById('searchFilterBtn').addEventListener('click', () => {
     window.location.href = '/views/search.html';
 });
 
-async function loadStudents(viewBtn,) {
+async function loadStudents() {
     const studentList = document.getElementById('studentList');
     try {
         const res = await fetch('http://localhost:3500/students');
