@@ -44,6 +44,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = '/'; 
+});
+
 document.getElementById('searchInput').addEventListener('input', async (e) => {
   const query = e.target.value.trim().toLowerCase();
   const res = await fetch('/students');

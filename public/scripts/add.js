@@ -1,3 +1,7 @@
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = '/'; 
+});
+
 document.getElementById('studentForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);

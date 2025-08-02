@@ -12,6 +12,10 @@ document.getElementById('deleteBtn').addEventListener('click', async () => {
     deleteStudent();
 });
 
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = '/'; 
+});
+
 async function deleteStudent() {
     if (!confirm("Are you sure you want to delete this student?")) return;
 

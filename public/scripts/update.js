@@ -3,6 +3,11 @@ document.getElementById('searchForm').addEventListener('submit', async (e) => {
     checkRollNo();
 });
 
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = '/'; 
+});
+
+
 document.getElementById('updateForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
