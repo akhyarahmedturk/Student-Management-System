@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Student</title>
+  <link rel="stylesheet" href="/css/add-search.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Delete Student</h1>
+
+    <form id="searchForm">
+      <input type="text" id="rollNo" placeholder="Enter Roll No" required />
+      <button type="submit">Find Student</button>
+    </form>
+
+    <div id="studentInfo" style="display: none; margin-top: 20px;">
+      <h3>Student Details:</h3>
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Department:</strong> <span id="department"></span></p>
+      <p><strong>Semester:</strong> <span id="semester"></span></p>
+      <p><strong>CGPA:</strong> <span id="cgpa"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phoneNo"></span></p>
+      <button id="deleteBtn" style="background-color: red; color: white; margin-top: 10px;">Delete</button>
+    </div>
+  </div>
+
+  <script src="/scripts/delete.js"></script>
+</body>
+
+</html>

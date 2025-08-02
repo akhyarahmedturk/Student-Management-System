@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Students</title>
+  <link rel="stylesheet" href="/css/add-search.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Search Students</h1>
+
+    <input type="text" id="searchInput" placeholder="Search by Name / Roll No / Department" />
+
+    <!-- Filters -->
+    <div class="filters">
+      <label>Department:</label>
+      <select id="departmentFilter">
+        <option value="All">All</option>
+      </select>
+
+      <label>Semester:</label>
+      <select id="semesterFilter">
+        <option value="Any">Any</option>
+      </select>
+
+      <label>CGPA Range:</label>
+      <select id="cgpaFilter">
+        <option value="Any">Any</option>
+        <option value="4-4">4.0</option>
+        <option value="3.5-4">3.5 - 4.0</option>
+        <option value="3-3.5">3.0 - 3.5</option>
+        <option value="2.5-3">2.5 - 3.0</option>
+        <option value="0-2.5">Below 2.5</option>
+      </select>
+      <div class="filter-group button-wrapper">
+        <button id="applyFilters">Apply Filters</button>
+        <button id="resetFilters">Reset Filters</button>
+      </div>
+    </div>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="/scripts/search.js"></script>
+</body>
+
+</html>

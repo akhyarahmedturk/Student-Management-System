@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Student</title>
+    <link rel="stylesheet" href="/css/add-search.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Update Student</h1>
+
+        <!-- Step 1: Roll number search -->
+        <form id="searchForm">
+            <input type="text" id="searchRollNo" placeholder="Enter Roll No to Update" required />
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Step 2: Form to update (initially hidden) -->
+        <form id="updateForm" style="display:none;">
+            <!-- to store data -->
+            <input type="hidden" name="rollNo" />
+            <input type="hidden" name="_id" />
+
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="text" name="department" placeholder="Department" required />
+            <input type="number" name="age" placeholder="Age" required />
+            <input type="number" name="semester" placeholder="Semester (1-8)" min="1" max="8" required />
+            <input type="text" name="phoneNo" placeholder="Phone Number" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="number" step="0.01" name="cgpa" placeholder="CGPA (0 - 4)" min="0" max="4" required />
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+    <script src="/scripts/update.js"></script>
+</body>
+
+</html>

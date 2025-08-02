@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Record System</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <div class="container">
+        <h1>Student Record Management</h1>
+        <p>Manage student data efficiently with a secure and scalable system.</p>
+        <a href="#" id="viewStudentsBtn" class="btn">View Students</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="features">
+        <div class="feature" id="addBtn">
+          <h3>➕ Add Record</h3>
+          <p>Create new student entries using a clean, user-friendly form.</p>
+        </div>
+        <div class="feature" id="updateBtn">
+          <h3>✏️ Update Record</h3>
+          <p>Modify existing student information quickly and efficiently.</p>
+        </div>
+        <div class="feature" id="deleteBtn">
+          <h3>🗑️ Delete Record</h3>
+          <p>Remove student records securely and easily.</p>
+        </div>
+        <div class="feature" id="searchFilterBtn">
+          <h3>🔍 Search & Filter</h3>
+          <p>Find student data by roll number, department, or semester.</p>
+        </div>
+      </section>
+
+      <section id="studentList" class="features" style="display:none;">
+        <!-- Student cards will appear here -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Student Record System. Built with Node.js & MongoDB.</p>
+    </footer>
+  </div>
+
+  <script src="/scripts/index.js"></script>
+</body>
+
+</html>
